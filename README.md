@@ -1,1 +1,1 @@
-# Aleptra Identity and Access Management
+# Aleptra - Identity and Access Management
