@@ -3,6 +3,8 @@
   "code": "swe",
   "direction": "ltr",
   "translations": {
+    "person": "Person",
+    "persons": "Personer",
     "title": "Identitets- och åtkomsthantering",
     "logout": "Logga ut"
   }
