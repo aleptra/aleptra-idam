@@ -3,9 +3,11 @@
   "code": "eng",
   "direction": "ltr",
   "translations": {
+    "filter": "Filter",
+    "logout": "Logout",
     "person": "Person",
     "persons": "Persons",
-    "title": "Identity and Access Management",
-    "logout": "Logout"
+    "search": "Search",
+    "title": "Identity and Access Management"
   }
 }

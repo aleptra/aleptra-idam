@@ -1,4 +1,5 @@
-<script src="https://www.front.nu/dist/front.js" template="index"></script>
+<script src="https://www.front.nu/dist/front.js" template="true"></script>
+<title globalize="persons">Persons</title>
 <template>
   <aside index="0"></aside>
   <aside index="1">
@@ -22,7 +23,7 @@
         </select>
       </div>
       <div class="p1">
-        <small class="pb1 ttu" globalize="ethnicity">Ethnicity</small>
+        <small class="pb1 ttu" globalize="country_of_residence">Ethnicity</small>
         <select>
           <option>All</option>
         </select>
@@ -32,15 +33,15 @@
 </template>
 
 <section class="pauto" storage="api">
-
-  <h1 globalize="persons">Persons</h1>
-  <nav class="crumbs pointer p05 bos6 bocblack01 bw1 bcsnow mt05 br05 gray w0">
-    <ol class="pl05">
-      <li><a href="./database" globalize="database">Database</a></li>
+  <nav class="crumbs pointer bocblack01 bw1 bcwhite br05 gray w0">
+    <ol>
+      <li><a href="#" globalize="database">Identity</a></li>
       <li globalize="persons">Persons</li>
     </ol>
   </nav>
-  <nav class="tabs mt1" id="test">
+  <h2 class="mt05" globalize="persons">Persons</h2>
+
+  <nav class="tabs mt05" id="test">
     <input type="radio" name="panel" id="tabalive" checked>
     <label for="tabalive" id="alive">Alive ({# alive #})</label>
     <section class="lg_p0 shade1" json="personsalive" bind="alive:alive"

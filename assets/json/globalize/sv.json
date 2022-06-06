@@ -3,9 +3,11 @@
   "code": "swe",
   "direction": "ltr",
   "translations": {
+    "filter": "Filtrera",
+    "logout": "Logga ut",
     "person": "Person",
     "persons": "Personer",
-    "title": "Identitets- och åtkomsthantering",
-    "logout": "Logga ut"
+    "search": "Sök",
+    "title": "Identitets- och åtkomsthantering"
   }
 }
