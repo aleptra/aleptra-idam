@@ -44,18 +44,17 @@
   <nav class="tabs mt05" id="test">
     <input type="radio" name="panel" id="tabalive" checked>
     <label for="tabalive" id="alive">Alive ({# alive #})</label>
-    <section class="lg_p0 shade1" json="personsalive" bind="alive:alive"
+    <section class="p0 shade1" json="personsalive" bind="alive:alive"
       bindvalue="{{ jsonheader:content-range = split('/',1) }}">
       <div id="personsalive" class="box cards list br0-" iterate="true"
         datasource="{{ storage:api.persons.endpoint }}?and=(death.is.null)"
         dataheader="{{ storage:api.persons.headers }}">
         <a href="database/person.html?id={{ jsonget:id }}">
           <figure class="p1 bcwhite bcblack001_h">
-            <img src="" jsonget="birth.country_code"
-              jsonbefore="https://www.front.nu/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
+            
             <p class="f2 pl1" filteron="true">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{
               jsonget:last_name.swe }}</p>
-            <p class="tar" jsonget="birth.date" format="age" globalize="years_0;0"></p>
+              <img src="" jsonget="birth.country_code" jsonbefore="https://www.front.nu/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
           </figure>
         </a>
       </div>
