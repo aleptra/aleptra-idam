@@ -39,7 +39,8 @@
       <li globalize="persons">Persons</li>
     </ol>
   </nav>
-  <h2 class="mt05" globalize="persons">Persons</h2>
+  <button class="br50 bcblack white w1r h1r fr"><i class="icon24">&#43;</i></button>
+  <h3 class="mt1 mb1" globalize="persons">Persons</h3>
 
   <nav class="tabs mt05" id="test">
     <input type="radio" name="panel" id="tabalive" checked>
@@ -50,8 +51,7 @@
         datasource="{{ storage:api.persons.endpoint }}?and=(death.is.null)"
         dataheader="{{ storage:api.persons.headers }}">
         <a href="database/person.html?id={{ jsonget:id }}">
-          <figure class="p1 bcwhite bcblack001_h">
-            
+          <figure class="p075 bcwhite bcblack001_h">
             <p class="f2 pl1" filteron="true">{{ jsonget:first_name.swe }} {{ jsonget:middle_name.swe }} {{
               jsonget:last_name.swe }}</p>
               <img src="" jsonget="birth.country_code" jsonbefore="https://www.front.nu/dist/design/front/flags/famfamfam/" jsonafter=".gif" class="f0">
